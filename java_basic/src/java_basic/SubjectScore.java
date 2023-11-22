@@ -11,6 +11,7 @@ public class SubjectScore {
 		int eng=0;
 		int math=0;
 		int scien=0;
+		char grade='F';
 		
 		int total=0;
 		float evg=0f;
@@ -32,9 +33,12 @@ public class SubjectScore {
 		evg = total/4f;
 		evg = (int)((evg*100+5)/10)/10f;
 		
+		if(evg>=90) {
+			
+		}
 		
-		System.out.println("국어\t영어\t수학\t과학\t총점\t평균");
-		System.out.printf("%d\t%d\t%d\t%d\t%d\t%f",kor,eng,math,scien,total,evg);
+		System.out.println("국어\t영어\t수학\t과학\t총점\t평균\t등급");
+		System.out.printf("%d\t%d\t%d\t%d\t%d\t%f",kor,eng,math,scien,total,evg,grade);
 	}
 
 }
